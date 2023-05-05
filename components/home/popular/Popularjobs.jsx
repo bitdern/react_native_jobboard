@@ -23,6 +23,7 @@ const Popularjobs = () => {
 
   console.log(data);
 
+  // error somewhere in this block; review against GH
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -41,7 +42,7 @@ const Popularjobs = () => {
           <FlatList
             data={[1, 2, 3, 4]}
             renderItem={({ item }) => <PopularJobCard item={item} />}
-            keyExtractor={(item) => item?.job_id}
+            keyExtractor={(item) => item.job_id}
             contentContainerStyle={{ columnGap: SIZES.medium }}
             horizontal
           />

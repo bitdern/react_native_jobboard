@@ -11,7 +11,6 @@ import { useRouter } from "expo-router";
 
 import styles from "./welcome.style";
 import { icons, SIZES } from "../../../constants";
-import { set } from "react-native-reanimated";
 
 const jobTypes = ["Full-time", "Part-time", "Contractor"];
 
