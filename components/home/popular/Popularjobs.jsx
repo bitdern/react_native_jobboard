@@ -23,7 +23,6 @@ const Popularjobs = () => {
 
   console.log(data);
 
-  // error somewhere in this block; review against GH
   return (
     <View style={styles.container}>
       <View style={styles.header}>
