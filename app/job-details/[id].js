@@ -35,6 +35,7 @@ const JobDetails = () => {
 
   const onRefresh = () => {};
 
+  // responsibilites tab is not rendering any content
   const displayTabContent = () => {
     switch (activeTab) {
       case "Qualifications":
@@ -44,6 +45,7 @@ const JobDetails = () => {
             points={data[0].job_highlights?.Qualifications ?? ["N/A"]}
           />
         );
+
       case "About":
         return (
           <JobAbout info={data[0].job_description ?? "No data provided"} />
@@ -56,7 +58,6 @@ const JobDetails = () => {
             points={data[0].job_highlights?.Responsibilities ?? ["N/A"]}
           />
         );
-
       default:
         break;
     }
@@ -115,6 +116,13 @@ const JobDetails = () => {
             </View>
           )}
         </ScrollView>
+
+        <JobFooter
+          url={
+            data[0]?.job_google_link ??
+            "https://careers.google.com./jobs/results"
+          }
+        />
       </>
     </SafeAreaView>
   );
