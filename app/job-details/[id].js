@@ -49,7 +49,13 @@ const JobDetails = () => {
           <JobAbout info={data[0].job_description ?? "No data provided"} />
         );
 
-      case "Responsbilites":
+      case "Responsibilities":
+        return (
+          <Specifics
+            title="Responsibilities"
+            points={data[0].job_highlights?.Responsibilities ?? ["N/A"]}
+          />
+        );
 
       default:
         break;
