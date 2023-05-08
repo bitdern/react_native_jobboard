@@ -5,6 +5,12 @@
       "bundler": "metro"
     },
     "name": "react_native_jobs",
-    "slug": "react_native_jobs"
+    "slug": "react-native-jobboard",
+    "extra": {
+      "eas": {
+        "projectId": "cf2e2285-8398-47ff-9171-6c360663a54d"
+      }
+    },
+    "owner": "bitdern"
   }
 }
