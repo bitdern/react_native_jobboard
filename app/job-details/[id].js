@@ -35,7 +35,6 @@ const JobDetails = () => {
 
   const onRefresh = () => {};
 
-  // responsibilites tab is not rendering any content
   const displayTabContent = () => {
     switch (activeTab) {
       case "Qualifications":
